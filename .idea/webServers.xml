@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d548207b-1642-4539-bebb-d9e068d61d30" name="godaddy">
+        <fileTransfer accessType="SFTP" host="184.168.97.129" port="22" sshConfigId="21043b0b-de0f-4230-80b8-06697f97f840" sshConfig="tohy9ak93y7n@184.168.97.129:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
