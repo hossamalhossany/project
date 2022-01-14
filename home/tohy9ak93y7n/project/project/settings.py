@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-# 14-1-2022   9:00 PM
+# hossam make change at project @ 14-1-2022   10:18 PM
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
