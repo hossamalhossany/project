@@ -6,8 +6,9 @@ from django.http import HttpResponse
 
 
 def index(request):
+    data = {"name": "mohamed", "age": 53652363, "address": "giza"}
     html_file = 'pages/index.html'
-    return render(request, html_file)
+    return render(request, html_file,data)
 
 
 def about(request):
