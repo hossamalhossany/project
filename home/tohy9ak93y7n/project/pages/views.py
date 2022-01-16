@@ -22,3 +22,4 @@ def contact(request):
 def info(request):
     html_file = 'pages/info.html'
     return render(request, html_file)
+
