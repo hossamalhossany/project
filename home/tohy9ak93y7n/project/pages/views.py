@@ -8,7 +8,7 @@ from django.http import HttpResponse
 def index(request):
     data = {"name": "mohamed", "age": 53652363, "address": "giza"}
     html_file = 'pages/index.html'
-    return render(request, html_file,data)
+    return render(request, html_file, data)
 
 
 def about(request):
@@ -17,3 +17,8 @@ def about(request):
 
 def contact(request):
     return HttpResponse("contact")
+
+
+def info(request):
+    html_file = 'pages/info.html'
+    return render(request, html_file)
