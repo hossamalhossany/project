@@ -10,7 +10,8 @@ def index(request):
 
 
 def products(request):
-    data ={'data': Product.objects.all()}
+    data = {'data1': Product.objects.all()}
+    # data = {'data1': Product.objects.get(name='ahmed')}
     html_file = 'products/products.html'
     return render(request, html_file, data)
 
