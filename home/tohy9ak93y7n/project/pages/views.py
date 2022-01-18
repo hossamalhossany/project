@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Login
 
 
 # Create your views here.
@@ -12,7 +13,15 @@ def index(request):
 
 
 def about(request):
-    return HttpResponse("ABOUT")
+    # get data from template
+    username_from_temp = request.POST.get('username')
+    password_from_temp = request.POST.get('password')
+    # join data_from template to table
+    data = Login(username=username_from_temp, password=password_from_temp)
+    # save the data
+    data.save()
+    html_file = 'pages/about.html'
+    return render(request, html_file)
 
 
 def contact(request):
