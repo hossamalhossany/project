@@ -10,8 +10,12 @@ def index(request):
 
 
 def products(request):
-    data = {'data1': Product.objects.all()}
     # data = {'data1': Product.objects.get(name='ahmed')}
+
+    # data = {'data1': Product.objects.filter(name='ahmed')}
+    all_objects = Product.objects.all()
+    data = {'data1': all_objects.filter(price__range=[10, 30])}
+
     html_file = 'products/products.html'
     return render(request, html_file, data)
 
