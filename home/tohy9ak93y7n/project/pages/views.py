@@ -15,15 +15,14 @@ def index(request):
 
 
 def about(request):
-    # get data from template
-    username_from_temp = request.POST.get('username')
-    password_from_temp = request.POST.get('password')
-
-    # join data_from template to table
-    data = Login(username=username_from_temp, password=password_from_temp)
-
-    # save the data
-    data.save()
+    if request.method == 'POST':
+        # put (request.POST) which come from template to forms.py (Login_form)
+        # forms.py (Login_form) is connected with models
+        # this mean data come from template to views.py then go to forms.py then go to models.py
+        data = Login_form(request.POST)
+        # save the data
+        if data.is_valid():
+            data.save()
 
     # create form by forms.py
     data_form = {'login_form': Login_form}
