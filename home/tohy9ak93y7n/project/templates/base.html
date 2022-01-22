@@ -13,10 +13,10 @@
     </head>
     <body>
         {% include 'parts/navbar.html' %}
-
-        {% block content  %}
-        {% endblock content %}
-
+        <div >
+            {% block content  %}
+            {% endblock content %}
+        </div>
         {% include 'parts/footer.html' %}
 
         <script src="{%static 'js/bootstrap.min.js' %}"></script>
