@@ -1,19 +1,29 @@
+<!DOCTYPE html>
 {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="HossamWeb" />
+    <meta name="author" content="hossam ahmed" />
+    <title>HossamWeb</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'theme/css/styles.css' %}" rel="stylesheet" />
 
-{% include 'parts/navbar.html' %}
-{% block content %}
-{% endblock content %}
-{% include 'parts/footer.html' %}
+    <link rel="icon" type="image/x-icon" href="{%static 'theme/assets/favicon.ico' %}" />
 
+</head>
+<body>
+    {% include 'parts/navbar.html' %}
 
+    {% block content %}
+    {% endblock content %}
 
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Title</title>-->
-<!--</head>-->
-<!--<body>-->
+    {% include 'parts/footer.html' %}
 
-<!--</body>-->
-<!--</html>-->
+    <script src="{%static 'js/bootstrap.min.js' %}"></script>
+    <script src="{%static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{%static 'theme/js/scripts.js' %}"></script>
+
+</body>
+</html>
