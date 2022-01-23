@@ -32,15 +32,16 @@ ALLOWED_HOSTS = ['www.hossamweb.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'pages.apps.PagesConfig',
-    'products.apps.ProductsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pages.apps.PagesConfig',
+    'products.apps.ProductsConfig',
     'crispy_forms',
+    'eclinic.apps.EclinicConfig',
 ]
 
 
