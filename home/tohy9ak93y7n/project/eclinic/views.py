@@ -14,7 +14,7 @@ def index(request):
 def modules(request):
     if request.method == 'POST':
 
-        username_from_temp = request.POST.get('username')
+        username_from_temp = str(request.POST.get('username')).strip().lower()
         password_from_temp = request.POST.get('password')
 
         # get data from table
