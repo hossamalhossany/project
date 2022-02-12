@@ -8,7 +8,7 @@ from django.db import connection
 def index(request):
     html_file = 'eclinic/index.html'
     return render(request, html_file)
-    return render(request, html_file)
+
 
 
 def modules(request):
@@ -31,5 +31,6 @@ def modules(request):
             html_file = 'eclinic/modules.html'
             return render(request, html_file, )
         else:
-            html_file = 'eclinic/login_error.html'
-            return render(request, html_file, )
+            data = {'error': 'error'}
+            html_file = 'eclinic/index.html'
+            return render(request, html_file, data)

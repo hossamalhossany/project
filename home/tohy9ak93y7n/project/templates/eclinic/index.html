@@ -22,7 +22,15 @@
               </form>
             </div>
         </div>
+        {% if error %}
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Error! </strong> you enter incorrect username or password .<br>
+                please TRY agian
+            </div>
+        {% endif %}
     </div>
 </div>
+<script src="{% static 'js/bootstrap.js' %}"></script>
 </body>
 </html>
