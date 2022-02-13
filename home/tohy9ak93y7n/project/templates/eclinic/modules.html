@@ -1,16 +1,24 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
 </head>
 <body>
-<h1>
-you enter username and password
-Correct
-</h1>
+    <h1 class="text-center">welcome at eclinic</h1>
+    <hr>
+<!--    class="d-grid text-center "-->
+    <div class="text-center" >
+        <button type="button" class="btn btn-primary btn-lg ">تسجيل المرضي</button><br><br>
+        <button type="button" class="btn btn-primary btn-lg ">العيادة    </button>
+    </div>
 
 
 
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>
