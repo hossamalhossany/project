@@ -34,3 +34,15 @@ def modules(request):
             data = {'error': 'error'}
             html_file = 'eclinic/index.html'
             return render(request, html_file, data)
+
+
+def registeration(request):
+    html_file = 'eclinic/registeration.html'
+    return render(request, html_file,)
+
+
+
+def clinic(request):
+    html_file = 'eclinic/clinic.html'
+    return render(request, html_file, )
+
