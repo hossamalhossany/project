@@ -36,8 +36,7 @@ def modules(request):
             return render(request, html_file, data)
 
 
-def registeration(request):
-    # html_file = 'eclinic/registeration.html'
+def search_patient(request):
     html_file = 'eclinic/search_patient.html'
     return render(request, html_file,)
 
