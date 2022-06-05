@@ -14,6 +14,7 @@ class Login(models.Model):
 class Patient_data(models.Model):
     patient_name = models.CharField(max_length=50)
     patient_sex = models.CharField(max_length=10)
+    patient_birth_date = models.CharField(max_length=20)
 
     def __str__(self):
         return self.patient_name
