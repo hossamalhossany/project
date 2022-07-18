@@ -19,7 +19,7 @@ def modules(request):
 
         # get data from table
         with connection.cursor() as cursor:
-            sql = ''' select username, password from project_db.eclinic22_login  '''
+            sql = ''' select username, password from project_db.eclinic_login  '''
             cursor.execute(sql)
             rows = cursor.fetchall()
         # end of ==> get data from table
