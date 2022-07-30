@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from .models import Login
 from django.db import connection
 
@@ -40,6 +40,9 @@ def search_patient(request):
     html_file = 'eclinic/search_patient.html'
     return render(request, html_file,)
 
+
+def search_patient_data(request):
+    return HttpResponse('hhhhhhhhhhhhhhh')
 
 
 def clinic(request):

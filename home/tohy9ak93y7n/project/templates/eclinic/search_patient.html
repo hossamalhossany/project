@@ -11,15 +11,21 @@
 
         <h3 class="float-end">يجب البحث عن المريض اولا</h3>
 
-
-
         <div class="input-group mb-3">
-            <button class="btn btn-success " type="submit">بحث</button>
+
+            <button class="btn btn-success " type="submit" onclick="show_patient_data">بحث</button>
+
+<!--             onclick="document.getElementById('patient_data').style.display='block'"-->
+
             <input type="text" class="form-control " placeholder="اسم المريض" style="text-align:right;" >
 
         </div>
-
+        <div id="patient_data" style="display: none; ">
+            this div for get patient data if OK   == when بحث   clicked
+        </div>
     </div>
+
+
 
 
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
