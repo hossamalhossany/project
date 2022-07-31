@@ -42,7 +42,9 @@ def search_patient(request):
 
 
 def search_patient_data(request):
-    return HttpResponse('hhhhhhhhhh')
+    # return HttpResponse('hhhhhhhhhh')
+    html_file = 'eclinic/test_page.html'
+    return render(request, html_file, )
 
 
 def clinic(request):
