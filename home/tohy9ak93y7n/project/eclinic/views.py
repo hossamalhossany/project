@@ -42,7 +42,7 @@ def search_patient(request):
 
 
 def search_patient_data(request):
-    return HttpResponse('hhhhhhhhhhhhhhh')
+    return HttpResponse('hhhhhhhhhh')
 
 
 def clinic(request):
