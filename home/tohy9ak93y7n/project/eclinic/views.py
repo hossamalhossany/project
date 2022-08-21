@@ -36,15 +36,18 @@ def modules(request):
             return render(request, html_file, data)
 
 
+def search_patient_data(request):
+    if request.method == 'POST':
+        data_from_search_box =
+
+    return render(request, )
+
+
 def search_patient(request):
     html_file = 'eclinic/search_patient.html'
     return render(request, html_file,)
 
 
-def search_patient_data(request):
-    # return HttpResponse('hhhhhhhhhh')
-    html_file = 'eclinic/test_page.html'
-    return render(request, html_file, )
 
 
 def clinic(request):
