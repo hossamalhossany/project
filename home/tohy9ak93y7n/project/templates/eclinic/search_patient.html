@@ -18,9 +18,18 @@
                 <button class="btn btn-success "  type="submit">بحث</button>
                  <input type="search" class="form-control " name="search_patient" id="search_patient" placeholder="اسم المريض" style="text-align:right;" >
             </form>
+
+            {%  for item in error_key.items %}
+                {{ item }}
+            {% endfor %}
+
         </div>
-        <div id="patient_data" style="display: none; ">
-            this div for get patient data if OK   == when بحث   clicked
+        <div id="patient_data" >
+            <h1> these patient data  </h1>
+
+            {%  for item in error_key.items %}
+                {{ item }}
+            {% endfor %}
         </div>
     </div>
 

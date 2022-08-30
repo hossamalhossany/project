@@ -39,6 +39,7 @@ def modules(request):
 def search_patient_data(request):
     if request.method == 'POST':
         data_from_search_box = str(request.POST.get('search_patient')).strip().lower()
+
         # get data from table
         with connection.cursor() as cursor:
             sql = ''' select patient_name from project_db.eclinic_patient_data '''
@@ -47,12 +48,13 @@ def search_patient_data(request):
         # end of === > get data from table
 
         data_from_table = dict(rows)
+        data = {'error_key': 'error_value'}
 
         if data_from_search_box in data_from_table.values():
             html_file = 'eclinic/search_patient.html'
-            return render(request, html_file,data_from_search_box)
+            return render(request, html_file,data)
         else:
-            data = {'error':'error'}
+            data = {'error_key': 'error_value'}
             html_file = 'eclinic/search_patient.html'
             return render(request, html_file, data)
 
